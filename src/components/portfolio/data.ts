@@ -65,7 +65,7 @@ export const experiences = [
       "Implémentation du modèle de sécurité applicative : contrôle d'accès basé sur les rôles (RBAC) et authentification JWT.",
       "Animation des cérémonies Agile (Scrum) et documentation technique auprès des parties prenantes.",
     ],
-    stack: ["JavaScript", "Python (Django)", "React.js", "PostgreSQL", "Redis", "JWT", "RBAC", "Jira"],
+    stack: ["JavaScript", "Python (Django)", "React.js", "PostgreSQL", "Redis", "JWT", "RBAC", "Jira", "Git / GitLab"],
   },
   {
     company: "WHD Agency",
