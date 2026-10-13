@@ -53,7 +53,7 @@ export const experiences = [
       "Pilotage de la migration intégrale de Qlik Sense vers Power BI en remodelisant la structure de données et la logique métier.",
       "Optimisation des flux de données et requêtes SQL/DAX sous Power Query pour accélérer le rafraîchissement des rapports.",
     ],
-    stack: ["Power BI", "DAX", "Power Query", "Qlik Sense", "SQL", "Talend", "Python"],
+    stack: ["Power BI", "DAX", "Power Query", "Qlik Sense", "SQL", "Talend", "Python", "Excel"],
   },
   {
     company: "SQORUS",
