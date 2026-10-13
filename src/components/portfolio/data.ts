@@ -24,11 +24,11 @@ export const skillGroups = [
   },
   {
     title: "Back-End & Architecture",
-    skills: ["Java", "Spring Boot", "Microservices", "APIs REST", "Kafka", "POO & SOLID"],
+    skills: ["Java", "Spring Boot", "Microservices", "APIs REST", "Kafka", "POO & SOLID", "RabbitMQ", "WebSocket"],
   },
   {
     title: "Données & Sécurité",
-    skills: ["PostgreSQL", "MySQL", "Auditabilité", "Keycloak", "JWT / OAuth2", "RBAC"],
+    skills: ["PostgreSQL", "MySQL", "Auditabilité", "Keycloak", "JWT / OAuth2", "RBAC", "MFA"],
   },
   {
     title: "DevOps & Qualité",
@@ -37,6 +37,10 @@ export const skillGroups = [
   {
     title: "Data & Analytics",
     skills: ["Power BI (DAX)", "Power Query", "SQL", "Modélisation dimensionnelle", "Talend"],
+  },
+  {
+    title: "AI & Developer Productivity",
+    skills: ["Prompt Engineering", "CLI LLM Tooling"],
   },
 ];
 
