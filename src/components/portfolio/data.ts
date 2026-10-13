@@ -133,6 +133,16 @@ export const projects: Project[] = [
     ],
     stack: ["Spring Boot", "Keycloak", "JWT", "MySQL", "RabbitMQ", "WebSocket"],
   },
+  {
+    title: "O-Banking — Application bancaire en ligne",
+    subtitle: "Stage PFA — Application Web Full-Stack (EMSI)",
+    terminalPath: "~/projets/obanking-emsi",
+    points: [
+      "Développement d'une application web de banque en ligne avec gestion des comptes et des opérations courantes.",
+      "Mise en place de tableaux de bord analytiques interactifs offrant une visualisation claire des flux financiers et des données transactionnelles.",
+    ],
+    stack: ["ReactJS", "JavaScript", "Python (Django)", "PostgreSQL"],
+  },
 ];
 
 export const education = {
