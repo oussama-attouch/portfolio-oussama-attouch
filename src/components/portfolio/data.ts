@@ -76,6 +76,17 @@ export const experiences = [
     ],
     stack: ["ReactJS", "NodeJS", "MongoDB", "Docker", "Git"],
   },
+  {
+    company: "EMSI",
+    role: "Stage PFA — Développeur Full-Stack (O-Banking)",
+    period: "07/2023 — 09/2023",
+    mode: "Casablanca",
+    points: [
+      "Développement d'une application web de banque en ligne (O-Banking).",
+      "Mise en place de tableaux de bord analytiques interactifs offrant une visualisation claire des flux financiers et des données transactionnelles.",
+    ],
+    stack: ["ReactJS", "JavaScript", "Python (Django)", "PostgreSQL"],
+  },
 ];
 
 export const featuredProject = {
