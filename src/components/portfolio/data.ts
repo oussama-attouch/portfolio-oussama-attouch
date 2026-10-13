@@ -149,6 +149,6 @@ export const languages = [
   { name: "Anglais", level: "Technique & professionnel" },
 ];
 
-export const interests = ["Échecs — Elo 2300, tournois FIDE", "Football"];
+export const interests = ["Échecs — Classement Elo 2300, tournois FIDE", "Football"];
 
 export const qualities = ["Communication", "Esprit d'équipe", "Apprentissage continu"];
