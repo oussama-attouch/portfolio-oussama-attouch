@@ -4,8 +4,8 @@ export const profile = {
   subtitle: "Ingénieur d'État (MIAGE)",
   location: "Casablanca, Maroc",
   email: "oussamaattouch20@gmail.com",
-  linkedin: "https://www.linkedin.com/in/oussama-attouch",
-  github: "https://github.com/oussamaattouch",
+  linkedin: "https://www.linkedin.com/in/oussama-attouch-bb1558261/",
+  github: "https://github.com/oussama-attouch",
   bio: "Diplômé de l'EMSI (MIAGE), ingénieur Software Full-Stack spécialisé en Java / Spring Boot et front-end moderne (React, Angular). J'accompagne la conception de systèmes distribués et résilients — architectures microservices, flux événementiels Kafka — et l'intégration d'environnements Cloud / DevOps (Docker, CI/CD). Orienté solutions et performance, je m'appuie également sur une expertise data (Power BI, SQL) pour livrer des applications alignées sur les enjeux métier.",
 };
 
