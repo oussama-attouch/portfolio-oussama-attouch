@@ -93,22 +93,48 @@ export const experiences = [
   },
 ];
 
-export const featuredProject = {
-  title: "Plateforme bancaire en ligne",
-  subtitle: "Microservices & dashboard BI — Projet d'ingénierie majeur",
-  metrics: [
-    { value: "40 000+", label: "opérations enregistrées" },
-    { value: "2 700+", label: "virements sécurisés" },
-    { value: "16", label: "indicateurs interactifs" },
-    { value: "54x", label: "rendu accéléré" },
-  ],
-  points: [
-    "Développement Full-Stack d'un système transactionnel bancaire gérant plus de 40 000 opérations enregistrées.",
-    "Flux de virement sécurisé et résilient via Kafka et PostgreSQL : +2 700 transferts, taux de succès supérieur à 96%.",
-    "Tableaux de bord analytiques avec 16 indicateurs interactifs, accélérant le rendu global de 54x.",
-  ],
-  stack: ["Java", "Spring Boot", "React.js", "PostgreSQL", "Kafka", "Keycloak", "Docker", "JUnit / TDD"],
+type ProjectMetric = { value: string; label: string };
+
+export type Project = {
+  title: string;
+  subtitle: string;
+  terminalPath: string;
+  /** Optional: the résumé provides no figures for every project. */
+  metrics?: ProjectMetric[];
+  points: string[];
+  stack: string[];
 };
+
+export const projects: Project[] = [
+  {
+    title: "Plateforme bancaire en ligne",
+    subtitle: "Microservices & dashboard BI — Projet d'ingénierie majeur",
+    terminalPath: "~/projets/plateforme-bancaire",
+    metrics: [
+      { value: "40 000+", label: "opérations enregistrées" },
+      { value: "2 700+", label: "virements sécurisés" },
+      { value: "16", label: "indicateurs interactifs" },
+      { value: "54x", label: "rendu accéléré" },
+    ],
+    points: [
+      "Développement Full-Stack d'un système transactionnel bancaire gérant plus de 40 000 opérations enregistrées.",
+      "Flux de virement sécurisé et résilient via Kafka et PostgreSQL : +2 700 transferts, taux de succès supérieur à 96%.",
+      "Tableaux de bord analytiques avec 16 indicateurs interactifs, accélérant le rendu global de 54x.",
+    ],
+    stack: ["Java", "Spring Boot", "React.js", "PostgreSQL", "Kafka", "Keycloak", "Docker", "JUnit / TDD"],
+  },
+  {
+    title: "Système de Réservation de Salon",
+    subtitle: "Architecture Microservices — Application Web Full-Stack",
+    terminalPath: "~/projets/systeme-reservation-salon",
+    points: [
+      "Développement d'un système de réservation en architecture microservices.",
+      "Mise en œuvre d'une authentification sécurisée avec Keycloak et JWT.",
+      "Conception d'API RESTful et intégration de MySQL pour la gestion des données.",
+    ],
+    stack: ["Spring Boot", "Keycloak", "JWT", "MySQL", "RabbitMQ", "WebSocket"],
+  },
+];
 
 export const education = {
   degree: "Diplôme d'Ingénieur en Informatique et Réseaux — option MIAGE",
