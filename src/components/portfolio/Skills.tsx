@@ -1,8 +1,8 @@
-import { Code2, Database, GitBranch, LineChart, Server, type LucideIcon } from "lucide-react";
+import { Code2, Database, GitBranch, LineChart, Server, Sparkles, type LucideIcon } from "lucide-react";
 import { skillGroups } from "./data";
 import { Section } from "./Section";
 
-const icons: LucideIcon[] = [Code2, Server, Database, GitBranch, LineChart];
+const icons: LucideIcon[] = [Code2, Server, Database, GitBranch, LineChart, Sparkles];
 
 export function Skills() {
   return (
