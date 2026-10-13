@@ -21,8 +21,9 @@ export function FeaturedProject() {
                 {project.terminalPath.replace("~/projets/", "")} — {project.subtitle}
               </div>
               <div className="p-6 sm:p-8">
+                <h3 className="font-display text-xl font-semibold">{project.title}</h3>
                 {metrics && metrics.length > 0 && (
-                  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                  <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                     {metrics.map((metric, i) => {
                       const Icon = icons[i % icons.length];
                       return (
