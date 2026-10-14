@@ -143,6 +143,22 @@ export const projects: Project[] = [
     ],
     stack: ["ReactJS", "JavaScript", "Python (Django)", "PostgreSQL"],
   },
+  {
+    title: "Verdigris — Serveur Redis-compatible",
+    subtitle: "Implémentation from scratch en Go — RESP, RDB, AOF",
+    terminalPath: "~/projets/verdigris",
+    metrics: [
+      { value: "5/6", label: "packages à >90% de couverture" },
+      { value: "0", label: "dépendances externes" },
+      { value: "2", label: "bugs trouvés par fuzzing" },
+    ],
+    points: [
+      "Serveur TCP from scratch implémentant le protocole RESP : redis-cli s'y connecte comme à Redis.",
+      "Store concurrent avec expiration passive et active, persistance RDB (snapshot atomique temp+fsync+rename) et AOF (log RESP rejouable qui survit à un SIGKILL).",
+      "Discipline de vérification : fuzzing systématique ayant découvert deux bugs de débordement, 90%+ de couverture sur cinq packages, zéro dépendance externe.",
+    ],
+    stack: ["Go", "RESP", "TCP/IP", "Concurrency", "Fuzzing", "RDB / AOF"],
+  },
 ];
 
 export const education = {
