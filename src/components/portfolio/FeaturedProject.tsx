@@ -1,4 +1,4 @@
-import { Activity, Landmark, ShieldCheck, Zap, type LucideIcon } from "lucide-react";
+import { Activity, Github, Landmark, ShieldCheck, Zap, type LucideIcon } from "lucide-react";
 import { projects } from "./data";
 import { Section } from "./Section";
 
@@ -16,9 +16,23 @@ export function FeaturedProject() {
               key={project.title}
               className="overflow-hidden rounded-2xl border border-primary/25 bg-card shadow-glow"
             >
-              <div className="border-b border-border bg-secondary/50 px-6 py-3 font-mono text-xs text-muted-foreground">
-                <span className="text-primary">~/projets/</span>
-                {project.terminalPath.replace("~/projets/", "")} — {project.subtitle}
+              <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-border bg-secondary/50 px-6 py-3 font-mono text-xs text-muted-foreground">
+                <span>
+                  <span className="text-primary">~/projets/</span>
+                  {project.terminalPath.replace("~/projets/", "")} — {project.subtitle}
+                </span>
+                {project.repo && (
+                  <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Code source de ${project.title} sur GitHub`}
+                    className="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-primary/30 bg-primary/10 px-2 py-1 text-primary transition-colors hover:bg-primary/20"
+                  >
+                    <Github className="h-3.5 w-3.5" />
+                    code source
+                  </a>
+                )}
               </div>
               <div className="p-6 sm:p-8">
                 <h3 className="font-display text-xl font-semibold">{project.title}</h3>

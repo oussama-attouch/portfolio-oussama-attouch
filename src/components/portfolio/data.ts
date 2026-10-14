@@ -98,6 +98,8 @@ export type Project = {
   title: string;
   subtitle: string;
   terminalPath: string;
+  /** Optional: not every project has a public repository. */
+  repo?: string;
   /** Optional: the résumé provides no figures for every project. */
   metrics?: ProjectMetric[];
   points: string[];
@@ -109,6 +111,7 @@ export const projects: Project[] = [
     title: "Plateforme bancaire en ligne",
     subtitle: "Microservices & dashboard BI — Projet d'ingénierie majeur",
     terminalPath: "~/projets/plateforme-bancaire",
+    repo: "https://github.com/oussama-attouch/ecom-bank-microservices",
     metrics: [
       { value: "40 000+", label: "opérations enregistrées" },
       { value: "2 700+", label: "virements sécurisés" },
@@ -120,7 +123,7 @@ export const projects: Project[] = [
       "Flux de virement sécurisé et résilient via Kafka et PostgreSQL : +2 700 transferts, taux de succès supérieur à 96%.",
       "Tableaux de bord analytiques avec 16 indicateurs interactifs, accélérant le rendu global de 54x.",
     ],
-    stack: ["Java", "Spring Boot", "React.js", "PostgreSQL", "Kafka", "Keycloak", "Docker", "JUnit / TDD"],
+    stack: ["Java", "Spring Boot", "Angular 19", "PostgreSQL", "Kafka", "Keycloak", "Docker", "JUnit / TDD"],
   },
   {
     title: "Système de Réservation de Salon",
@@ -137,16 +140,18 @@ export const projects: Project[] = [
     title: "O-Banking — Application bancaire en ligne",
     subtitle: "Stage PFA — Application Web Full-Stack (EMSI)",
     terminalPath: "~/projets/obanking-emsi",
+    repo: "https://github.com/oussama-attouch/O-Banking_Payment_Project_V2",
     points: [
       "Développement d'une application web de banque en ligne avec gestion des comptes et des opérations courantes.",
       "Mise en place de tableaux de bord analytiques interactifs offrant une visualisation claire des flux financiers et des données transactionnelles.",
     ],
-    stack: ["ReactJS", "JavaScript", "Python (Django)", "PostgreSQL"],
+    stack: ["Python (Django)", "SQLite", "Tabler UI", "Chart.js"],
   },
   {
     title: "Verdigris — Serveur Redis-compatible",
     subtitle: "Implémentation from scratch en Go — RESP, RDB, AOF",
     terminalPath: "~/projets/verdigris",
+    repo: "https://github.com/oussama-attouch/verdigris",
     metrics: [
       { value: "5/6", label: "packages internes à >90% de couverture" },
       { value: "0", label: "dépendances externes" },
