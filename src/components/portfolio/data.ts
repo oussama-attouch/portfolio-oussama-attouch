@@ -148,14 +148,14 @@ export const projects: Project[] = [
     subtitle: "Implémentation from scratch en Go — RESP, RDB, AOF",
     terminalPath: "~/projets/verdigris",
     metrics: [
-      { value: "5/6", label: "packages à >90% de couverture" },
+      { value: "5/6", label: "packages internes à >90% de couverture" },
       { value: "0", label: "dépendances externes" },
       { value: "2", label: "bugs trouvés par fuzzing" },
     ],
     points: [
-      "Serveur TCP from scratch implémentant le protocole RESP : redis-cli s'y connecte comme à Redis.",
+      "Serveur TCP from scratch implémentant le protocole RESP : redis-cli s'y connecte comme à Redis (SET, GET, DEL, EXISTS, EXPIRE, TTL, PERSIST, SAVE).",
       "Store concurrent avec expiration passive et active, persistance RDB (snapshot atomique temp+fsync+rename) et AOF (log RESP rejouable qui survit à un SIGKILL).",
-      "Discipline de vérification : fuzzing systématique ayant découvert deux bugs de débordement, 90%+ de couverture sur cinq packages, zéro dépendance externe.",
+      "Discipline de vérification : quatre cibles de fuzzing (Decode, Encode, rejeu AOF, lecture RDB) — deux bugs de l'encodeur trouvés par le fuzzer — plus un débordement de longueur isolé par un test ciblé sur un paquet de 21 octets.",
     ],
     stack: ["Go", "RESP", "TCP/IP", "Concurrency", "Fuzzing", "RDB / AOF"],
   },
