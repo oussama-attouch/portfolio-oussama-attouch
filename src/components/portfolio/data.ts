@@ -153,9 +153,9 @@ export const projects: Project[] = [
       { value: "2", label: "bugs trouvés par fuzzing" },
     ],
     points: [
-      "Serveur TCP from scratch implémentant le protocole RESP : redis-cli s'y connecte comme à Redis (SET, GET, DEL, EXISTS, EXPIRE, TTL, PERSIST, SAVE).",
-      "Store concurrent avec expiration passive et active, persistance RDB (snapshot atomique temp+fsync+rename) et AOF (log RESP rejouable qui survit à un SIGKILL).",
-      "Discipline de vérification : quatre cibles de fuzzing (Decode, Encode, rejeu AOF, lecture RDB) — deux bugs de l'encodeur trouvés par le fuzzer — plus un débordement de longueur isolé par un test ciblé sur un paquet de 21 octets.",
+      "Serveur TCP from scratch implémentant le protocole RESP : redis-cli s'y connecte comme à Redis — 12 commandes, dont SET, GET, DEL, EXISTS, EXPIRE, TTL, PERSIST, SAVE, PING et ECHO.",
+      "Store concurrent avec expiration passive et active ; persistance RDB (snapshot atomique temp+fsync+rename) et AOF (log RESP rejouable qui survit à un SIGKILL — au plus la dernière seconde d'écritures non synchronisées).",
+      "Discipline de vérification : 690 cas de test verts sous le détecteur de courses, quatre cibles de fuzzing (Decode, Encode, rejeu AOF, lecture RDB) — deux bugs de l'encodeur trouvés par le fuzzer, plus un débordement de longueur isolé par un test ciblé sur un paquet de 21 octets.",
     ],
     stack: ["Go", "RESP", "TCP/IP", "Concurrency", "Fuzzing", "RDB / AOF"],
   },
